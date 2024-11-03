@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>JavaScript 插件介紹</title>
+    <style>
+        .modal-body {
+            overflow-y: auto;
+            max-height: 400px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 導覽列 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">JS 插件介紹</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#jquery">jQuery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#react">React</a></li>
+            <li class="nav-item"><a class="nav-link" href="#vue">Vue.js</a></li>
+            <li class="nav-item"><a class="nav-link" href="#angular">Angular</a></li>
+            <li class="nav-item"><a class="nav-link" href="#d3">D3.js</a></li>
+            <li class="nav-item"><a class="nav-link" href="#chart">Chart.js</a></li>
+            <li class="nav-item"><a class="nav-link" href="#axios">Axios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#lodash">Lodash</a></li>
+            <li class="nav-item"><a class="nav-link" href="#threejs">Three.js</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gsap">GSAP</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <h1 class="text-center">JavaScript 插件介紹</h1>
+    <div class="row">
+
+        <!-- jQuery -->
+        <div class="col-md-4" id="jquery">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">jQuery</h5>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-jquery">查看詳細</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- React -->
+        <div class="col-md-4" id="react">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">React</h5>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-react">查看詳細</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vue.js -->
+        <div class="col-md-4" id="vue">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Vue.js</h5>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-vue">查看詳細</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angular -->
+        <div class="col-md-4" id="angular">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Angular</h5>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-angular">查看詳細</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- D3.js -->
+        <div class="col-md-4" id="d3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">D3.js</h5>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-d3">查看詳細</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chart.js -->
+        <div class="col-md-4" id="chart">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Chart.js</h5>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-chart">查看詳細</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Axios -->
+        <div class="col-md-4" id="axios">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Axios</h5>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-axios">查看詳細</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lodash -->
+        <div class="col-md-4" id="lodash">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Lodash</h5>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-lodash">查看詳細</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Three.js -->
+        <div class="col-md-4" id="threejs">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Three.js</h5>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-threejs">查看詳細</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- GSAP -->
+        <div class="col-md-4" id="gsap">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">GSAP</h5>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-gsap">查看詳細</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modals -->
+<div class="modal fade" id="modal-jquery" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">jQuery</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>介紹：</strong>jQuery 是一個快速、小巧且功能豐富的 JavaScript 函式庫。它簡化了 HTML 文件的操作、事件處理和動畫，並使 AJAX 請求更為簡單。</p>
+                <p><strong>官方網站：</strong><a href="https://jquery.com/" target="_blank">訪問</a></p>
+                <h6>範例程式碼：</h6>
+                <pre>$('#element').hide();</pre>
+                <h6>範例展示效果：</h6>
+                <div id="jqueryDemo"><button onclick="alert('這是 jQuery 的示範！')">點我</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-react" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">React</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>介紹：</strong>React 是一個用於構建用戶界面的 JavaScript 庫。它可以幫助開發者創建單頁應用程序並高效地更新 UI。</p>
+                <p><strong>官方網站：</strong><a href="https://reactjs.org/" target="_blank">訪問</a></p>
+                <h6>範例程式碼：</h6>
+                <pre>ReactDOM.render(&lt;h2&gt;Hello, React!&lt;/h2&gt;, document.getElementById('root'));</pre>
+                <h6>範例展示效果：</h6>
+                <div id="reactDemo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-vue" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Vue.js</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>介紹：</strong>Vue.js 是一個漸進式的 JavaScript 框架，用於構建用戶界面。與其他大型框架不同，Vue 被設計為可以逐步採用。</p>
+                <p><strong>官方網站：</strong><a href="https://vuejs.org/" target="_blank">訪問</a></p>
+                <h6>範例程式碼：</h6>
+                <pre>new Vue({ el: '#app', data: { message: 'Hello Vue!' }});</pre>
+                <h6>範例展示效果：</h6>
+                <div id="vueDemo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-angular" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Angular</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>介紹：</strong>Angular 是一個開放源碼的 JavaScript 框架，用於構建動態網頁應用程序。它提供了強大的功能來構建單頁應用。</p>
+                <p><strong>官方網站：</strong><a href="https://angular.io/" target="_blank">訪問</a></p>
+                <h6>範例程式碼：</h6>
+                <pre>@Component({ selector: 'my-app', template: '&lt;h1&gt;Hello Angular!&lt;/h1&gt;' })</pre>
+                <h6>範例展示效果：</h6>
+                <div id="angularDemo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-d3" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">D3.js</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>介紹：</strong>D3.js 是一個用於操作文檔基於數據的 JavaScript 庫。它使用 HTML、SVG 和 CSS 來創建動態視覺化。</p>
+                <p><strong>官方網站：</strong><a href="https://d3js.org/" target="_blank">訪問</a></p>
+                <h6>範例程式碼：</h6>
+                <pre>d3.select('body').append('h1').text('Hello D3.js');</pre>
+                <h6>範例展示效果：</h6>
+                <div id="d3Demo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-chart" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Chart.js</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>介紹：</strong>Chart.js 是一個簡單而靈活的 JavaScript 圖表庫，能夠快速創建圖表並提供多種選項。</p>
+                <p><strong>官方網站：</strong><a href="https://www.chartjs.org/" target="_blank">訪問</a></p>
+                <h6>範例程式碼：</h6>
+                <pre>new Chart(ctx, { type: 'bar', data: { labels: ['Red', 'Blue'], datasets: [{ label: '# of Votes', data: [12, 19] }] }});</pre>
+                <h6>範例展示效果：</h6>
+                <div id="chartDemo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-axios" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Axios</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>介紹：</strong>Axios 是一個基於 Promise 的 HTTP 客戶端，能夠在瀏覽器和 Node.js 中使用，並支持請求和響應的轉換。</p>
+                <p><strong>官方網站：</strong><a href="https://axios-http.com/" target="_blank">訪問</a></p>
+                <h6>範例程式碼：</h6>
+                <pre>axios.get('/user?ID=123').then(response => console.log(response));</pre>
+                <h6>範例展示效果：</h6>
+                <div id="axiosDemo">正在加載數據...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-lodash" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Lodash</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>介紹：</strong>Lodash 是一個 JavaScript 工具庫，提供許多有用的函數來處理數組、對象和其他類型的數據。</p>
+                <p><strong>官方網站：</strong><a href="https://lodash.com/" target="_blank">訪問</a></p>
+                <h6>範例程式碼：</h6>
+                <pre>_.chunk(['a', 'b', 'c', 'd'], 2); // [['a', 'b'], ['c', 'd']]</pre>
+                <h6>範例展示效果：</h6>
+                <div id="lodashDemo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-threejs" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Three.js</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>介紹：</strong>Three.js 是一個 JavaScript 庫，讓開發者可以在瀏覽器中創建和顯示 3D 场景，提供了豐富的功能來進行 3D 渲染。</p>
+                <p><strong>官方網站：</strong><a href="https://threejs.org/" target="_blank">訪問</a></p>
+                <h6>範例程式碼：</h6>
+                <pre>const scene = new THREE.Scene();</pre>
+                <h6>範例展示效果：</h6>
+                <div id="threejsDemo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-gsap" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">GSAP</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>介紹：</strong>GSAP 是一個強大的動畫庫，允許用戶創建高性能的動畫效果，並提供簡單的 API 來操控動畫。</p>
+                <p><strong>官方網站：</strong><a href="https://greensock.com/gsap/" target="_blank">訪問</a></p>
+                <h6>範例程式碼：</h6>
+                <pre>gsap.to('.box', { duration: 2, x: 100 });</pre>
+                <h6>範例展示效果：</h6>
+                <div id="gsapDemo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react/umd/react.development.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // jQuery 示例
+        $('#jqueryDemo').html('<button onclick="alert(\'這是 jQuery 的示範！\')">點我</button>');
+
+        // React 示例
+        const reactElement = React.createElement('h2', null, 'Hello, React!');
+        ReactDOM.render(reactElement, document.getElementById('reactDemo'));
+
+        // Vue 示例
+        new Vue({
+            el: '#vueDemo',
+            data: {
+                message: 'Hello, Vue!'
+            },
+            template: '<h2>{{ message }}</h2>'
+        });
+
+        // D3.js 示例
+        d3.select('#d3Demo').append('h1').text('Hello D3.js');
+
+        // Chart.js 示例
+        const ctx = document.createElement('canvas');
+        document.getElementById('chartDemo').appendChild(ctx);
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19],
+                    backgroundColor: ['red', 'blue']
+                }]
+            }
+        });
+
+        // Axios 示例
+        axios.get('https://jsonplaceholder.typicode.com/users/1')
+            .then(response => {
+                $('#axiosDemo').html('<p>用戶名稱: ' + response.data.name + '</p>' +
+                                     '<p>用戶郵件: ' + response.data.email + '</p>');
+            })
+            .catch(error => {
+                $('#axiosDemo').html('<p>無法加載數據。</p>');
+            });
+
+        // Lodash 示例
+        $('#lodashDemo').html('<pre>' + JSON.stringify(_.chunk(['a', 'b', 'c', 'd'], 2)) + '</pre>');
+
+        // Three.js 示例
+        const threejsScene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(400, 400);
+        document.getElementById('threejsDemo').appendChild(renderer.domElement);
+        const geometry = new THREE.BoxGeometry();
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        const cube = new THREE.Mesh(geometry, material);
+        threejsScene.add(cube);
+        camera.position.z = 5;
+        function animate() {
+            requestAnimationFrame(animate);
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+            renderer.render(threejsScene, camera);
+        }
+        animate();
+
+        // GSAP 示例
+        const box = document.createElement('div');
+        box.className = 'box';
+        box.style.width = '100px';
+        box.style.height = '100px';
+        box.style.backgroundColor = 'red';
+        box.style.position = 'relative';
+        box.style.margin = '10px auto';
+        document.getElementById('gsapDemo').appendChild(box);
+        gsap.to(box, { duration: 2, x: 100 });
+    });
+</script>
+
+</body>
+</html>
